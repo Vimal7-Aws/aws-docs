@@ -1,5 +1,5 @@
 gem "jekyll-theme-minimal"
-
+gem "just-the-docs"
 source "https://rubygems.org"
 gemspec
 
