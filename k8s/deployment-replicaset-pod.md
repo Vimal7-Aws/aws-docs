@@ -1,9 +1,7 @@
 Let's break down Pods, Deployments, and ReplicaSets in Kubernetes with a diagram to illustrate their relationships.
 
 
-![image](https://github.com/user-attachments/assets/46741475-213b-49bc-81b6-d6c2b9113ca0)
-
-
+<img src="https://github.com/user-attachments/assets/46741475-213b-49bc-81b6-d6c2b9113ca0" width="400" height="400">
 
 ## Kubernetes Objects: Pod, ReplicaSet, and Deployment
 
