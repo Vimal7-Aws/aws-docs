@@ -71,5 +71,36 @@ These three objects work together to manage and scale your applications in Kuber
 This layered approach provides a robust and scalable way to manage applications in Kubernetes, handling updates, 
 scaling, and ensuring the desired availability of your services.
 
+## Kubernetes Rolling Updates
 
+One of the primary benefits of using a Deployment to control your pods is the ability to perform rolling updates. Rolling updates allow you to update the configuration of your pods gradually, and Deployments offer many options to control this process.
+
+The most important option to configure rolling updates is the update strategy. In your Deployment manifest, `spec.strategy.type` has two possible values:
+
+* `RollingUpdate`: New pods are added gradually, and old pods are terminated gradually
+* `Recreate`: All old pods are terminated before any new pods are added
+
+In most cases, `RollingUpdate` is the preferable update strategy for Deployments. `Recreate` can be useful if you are running a pod as a singleton, and having a duplicate pod for even a few seconds is not acceptable.
+
+When using the `RollingUpdate` strategy, there are two more options that let you fine-tune the update process:
+
+* `maxSurge`: The number of pods that can be created above the desired amount of pods during an update
+* `maxUnavailable`: The number of pods that can be unavailable during the update process
+
+Both `maxSurge` and `maxUnavailable` can be specified as either an integer (e.g., `2`) or a percentage (e.g., `50%`), and they cannot both be zero. When specified as an integer, it represents the actual number of pods; when specifying a percentage, that percentage of the desired number of pods is used, rounded down. For example, if you were using the default values of `25%` for both `maxSurge` and `maxUnavailable`, and applied an update to a Deployment with 8 pods, then `maxSurge` would be 2 pods, and `maxUnavailable` would also be 2 pods. That means that during the update process, the following conditions will be met:
+
+* At most 10 pods (8 desired pods + 2 `maxSurge` pods) will be Ready during the update
+* At least 6 pods (8 desired pods - 2 `maxUnavailable` pods) will always be Ready during the update
+
+It is important to note that when considering the number of pods a Deployment should run during an update, it will be using the number of replicas specified in the updated version of the deployment, not the existing version.
+
+Another way of understanding these options is: `maxSurge` is the maximum number of new pods that will be created at a time, and `maxUnavailable` is the maximum number of old pods that will be deleted at a time. Let's step through the process for updating a Deployment with 3 replicas from “v1” to “v2” using the following update strategy:
+
+```yaml
+replicas: 3
+strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
 
