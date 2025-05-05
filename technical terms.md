@@ -36,6 +36,9 @@
 - **Auto-scaling.**
 - **Fault isolation.**
 - **Fault tolerance.**
+- **SSL Termination**
+- **WAF Integration**
+- **Health Check**    
 
 
 
