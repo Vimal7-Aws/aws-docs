@@ -11,6 +11,6 @@
 
 
 # LoadBalancer :
-  - # SSL Termination
-  - # WAF Integration
-  - # Health Check    
+  - SSL Termination
+  - WAF Integration
+  - Health Check    
