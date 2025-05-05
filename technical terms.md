@@ -33,6 +33,9 @@
 - **TLS termination**
 - I**ntegrated health checks**
 - **Scalability and high availability.**
+- **Auto-scaling.**
+- **Fault isolation.**
+- **Fault tolerance.**
 
 
 
