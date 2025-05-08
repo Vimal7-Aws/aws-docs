@@ -1,7 +1,13 @@
 ## Kubernetes Security Context in Detail
 
-A Kubernetes **Security Context** is a crucial feature that defines the privileges and access control settings for a Pod or Container. It allows you to configure various security-related parameters, enabling fine-grained control over the behavior and capabilities of your workloads. Think of it as a way to apply security policies directly at the Pod and Container level, supplementing cluster-wide mechanisms like RBAC and Network Policies.
+A Kubernetes **Security Context** is a crucial feature that defines the privileges and access control settings for a Pod or Container. It allows you to configure various security-related parameters, enabling fine-grained control over the behavior and capabilities of your workloads. 
 
+Think of it as a way to :
+
+ * <mark> Apply security policies directly at the Pod and Container level
+ * <mark> Supplementing cluster-wide mechanisms like RBAC and Network Policies.
+
+ 
 You can define a `securityContext` in both the `PodSpec` (applying to all containers within the Pod) and the `ContainerSpec` (applying only to a specific container). Container-level `securityContext` settings will override any conflicting settings defined at the Pod level for that specific container.
 
 Here's a detailed breakdown of the various fields within a `securityContext`:
