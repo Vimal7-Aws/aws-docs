@@ -4,6 +4,16 @@ Okay, here are 100 AWS ECS interview questions and answers, formatted for clarit
 
 1.  **Question:** What is Amazon ECS?       
     **Answer:** Amazon Elastic Container Service (ECS) is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale Docker containers on AWS.
+   
+
+    
+    * deploy.
+    * manage.
+    * and scale Docker containers on AWS.
+    
+    
+
+
 
 2.  **Question:** What are the key components of ECS?       
     **Answer:** The key components are:
