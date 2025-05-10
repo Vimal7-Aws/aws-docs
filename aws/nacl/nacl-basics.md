@@ -95,5 +95,47 @@ resource "aws_network_acl" "example" {
 }
 ```
 
+
+![image](https://github.com/user-attachments/assets/62dc1ae5-95e1-4895-b9be-5a7a56aafd13)
+
+Here’s a clear side-by-side comparison of **NACLs** (Network ACLs) and **Security Groups** in AWS:
+
+---
+
+## 🔸 NACL vs. Security Group in AWS
+
+| Feature                     | **NACL (Network ACL)**                                  | **Security Group**                                |
+| --------------------------- | ------------------------------------------------------- | ------------------------------------------------- |
+| **Scope/Applies to**        | Subnet-level                                            | Instance-level (ENI-level)                        |
+| **Stateful?**               | ❌ No (Stateless)                                        | ✅ Yes (Stateful)                                  |
+| **Traffic Direction Rules** | Separate rules for inbound and outbound                 | One set for both—responses allowed automatically  |
+| **Rule Evaluation Order**   | In order (lowest rule number first)                     | All rules evaluated together (implicit deny last) |
+| **Allow/Deny Rules**        | Can explicitly **allow or deny**                        | Can only **allow**                                |
+| **Default Behavior**        | Default NACL allows all traffic                         | Default SG allows no inbound, all outbound        |
+| **Applies to**              | All traffic to/from subnet                              | Specific EC2 instances or ENIs                    |
+| **Use Case**                | Broad subnet-level filtering (e.g., deny IP range)      | Fine-grained access control per instance          |
+| **Logging**                 | VPC Flow Logs (via CloudWatch)                          | No direct logs; use VPC Flow Logs at ENI level    |
+| **Common Use**              | Block specific IPs, open/close ports at subnet boundary | Allow specific ports/services on instances        |
+
+---
+
+## 🔑 Quick Analogy:
+
+* **NACL** = Door at the **subnet boundary** — doesn’t remember state; checks each request individually.
+* **Security Group** = Door on the **individual EC2 instance** — remembers established connections (stateful).
+
+---
+
+## 🔧 Example Use Cases:
+
+* Use **NACLs** to block a malicious IP address at the subnet level.
+* Use **Security Groups** to allow only port 22 (SSH) or 443 (HTTPS) access to specific EC2 instances.
+
+---
+
+Would you like a PDF or cheat sheet version of this for interview prep?
+
+
+
 ---
 
