@@ -17,7 +17,10 @@ Here are some key features associated with Kubernetes Pods:
 
 * **Secrets:** API objects used to store sensitive information, such as passwords, API tokens, and SSH keys. Secrets are similar to ConfigMaps but are specifically designed for confidential data and are stored more securely.
 
-* **Volumes:** Provide persistent storage for containers within a Pod. Volumes have a lifecycle that is tied to the Pod and can be backed by various storage options, including local storage, network-attached storage, and cloud provider storage.
+* **Volumes:** Provide persistent storage for containers within a Pod. Volumes have a lifecycle that is tied to the Pod and can be backed by various storage options, including
+   *  local storage
+   *  network-attached storage
+   *  and cloud provider storage.
 
 * **Init Containers:** Specialized containers that run before the main application containers in a Pod. Init containers can perform setup tasks, such as downloading dependencies or configuring settings, before the application containers start.
 
