@@ -1,1 +1,0 @@
-output-> k8s manifest file -> submtted to k8s api server of cluster -> resource will be create in the cluster
