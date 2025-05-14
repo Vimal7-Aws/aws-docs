@@ -1,3 +1,8 @@
+
+![image](https://github.com/user-attachments/assets/4c023b70-d098-4aba-b979-26256cccf003)
+
+
+
 The **OSI (Open Systems Interconnection) model** is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers. It describes how network hardware and software work together to transmit data. While the modern internet is based on the TCP/IP model, the OSI model is still a valuable tool for understanding network communication, troubleshooting, and developing network technologies.
 
 Here are the seven layers of the OSI model, from bottom to top:
