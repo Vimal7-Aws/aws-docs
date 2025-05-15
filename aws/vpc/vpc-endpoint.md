@@ -5,7 +5,7 @@ A **VPC Endpoint** in AWS is a virtual device that enables you to privately conn
 Think of a VPC Endpoint as a secure and direct tunnel between your VPC and an AWS service, keeping all traffic within the AWS network for enhanced security and potentially lower latency and costs.
 
 **Key Benefits of Using VPC Endpoints:**
-
+ 
 * **Enhanced Security:** By keeping traffic within the AWS network, you reduce your attack surface and eliminate the need to expose your VPC resources to the public internet for accessing AWS services.
 * **Improved Availability:** VPC Endpoints are highly available and redundant, just like the AWS services they connect to.
 * **Lower Latency:** Direct connectivity within the AWS network can often result in lower latency compared to routing traffic over the public internet.
