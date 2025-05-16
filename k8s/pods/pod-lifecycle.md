@@ -1,6 +1,17 @@
 # Kubernetes Pod Lifecycle
 
+
+
+
+
+![image](https://github.com/user-attachments/assets/eb291cd0-4b94-4abe-8265-89bd64280624)
+
+
+</br>
+
 A Kubernetes Pod goes through a defined lifecycle, from its creation to its termination. Understanding this lifecycle is crucial for managing and troubleshooting applications running in Kubernetes. Here are the key phases in a Pod's lifecycle:
+
+</br>  
 
 **1. Pending:**
 
