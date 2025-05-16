@@ -1,4 +1,3 @@
-````markdown
 ## Controlling Docker Performance with Linux Namespaces and cgroups
 
 Docker is a popular containerization solution for packaging, distributing, and running applications in lightweight environments. However, with growing container density and workload variety comes increased pressure to control container performance. Thankfully, Linux offers powerful tools, including namespaces and control groups (cgroups), that enable fine-grained resource allocation and guarantee the optimal performance of each container. In this article, you’ll learn more about namespaces and cgroups and how to use them to control Docker performance.
