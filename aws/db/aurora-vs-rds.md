@@ -45,11 +45,11 @@ However, it's important to note that **RDS still offers benefits:**
 
 The best choice between Aurora and RDS depends on the specific requirements of your application, 
 including  
-performance needs,   
-scalability demands,   
-availability requirements,   
-cost considerations,   
-and database engine preference.   
+* **performance needs,   
+* **scalability demands,   
+* **availability requirements,   
+* **cost considerations,   
+* **and database engine preference.   
 For high-performance, scalable, and highly available MySQL and PostgreSQL workloads,   
 Aurora is often the preferred choice.    
 
