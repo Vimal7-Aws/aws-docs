@@ -12,7 +12,7 @@ If you find it helpful, your support will help continue the series!
 Both `CMD` and `ENTRYPOINT` define the command that runs when a container starts, but they behave differently.
 
 ## In CMD instructions the command line parameters passed will replace entirely where as in ENTRYPOINT the command line arguements will be appended
-
+## CMD and ENTRYPOINT will be jointly used when you have to set some default parameters
 
 ---
 
