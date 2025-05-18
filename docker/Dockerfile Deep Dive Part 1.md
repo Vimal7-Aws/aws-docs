@@ -3,9 +3,18 @@
 Mastering Dockerfile instructions is essential for creating efficient, secure, and maintainable container images. In this post, we’ll break down two commonly misunderstood pairs of instructions—`CMD` vs `ENTRYPOINT` and `COPY` vs `ADD`—through a clear, side-by-side comparison.
 If you find it helpful, your support will help continue the series!
 
+
+---
+
+
 ## ↻ CMD vs ENTRYPOINT in Dockerfile
 
 Both `CMD` and `ENTRYPOINT` define the command that runs when a container starts, but they behave differently.
+
+## In CMD instructions the command line parameters passed will replace entirely where as in ENTRYPOINT the command line arguements will be appended
+
+
+---
 
 ## CMD
 
