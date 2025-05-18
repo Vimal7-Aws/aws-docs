@@ -1,4 +1,7 @@
 <img width="898" alt="image" src="https://github.com/user-attachments/assets/46e9f020-7e00-45f1-a6a8-3d1d9411056b" />
+
+<br/>
+<br/>
 In Amazon Elastic Container Service (ECS), **clusters** and **services** are distinct but tightly related concepts that work together to run and manage containerized applications. Here's how they are related:
 
 **ECS Cluster: The Foundation**
