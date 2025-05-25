@@ -1,3 +1,18 @@
+
+---
+
+</br>
+</br>
+
+
+
+<img width="878" alt="image" src="https://github.com/user-attachments/assets/01686598-e1ca-4bee-aac1-06519cf2ca44" />
+
+
+</br>
+</br>
+
+---
 AWS Identity and Access Management (IAM) policies are JSON documents that define permissions and control access to AWS resources. There are several different types of policies in AWS IAM, each serving a specific purpose:
 
 **1. Identity-Based Policies:**
