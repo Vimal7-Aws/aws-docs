@@ -1,3 +1,18 @@
+</br>
+</br>
+
+---
+
+
+![image](https://github.com/user-attachments/assets/fa2e8987-75f7-4b12-98c7-ed4fbd18757e)
+
+
+---
+
+
+</br>
+</br>
+
 An IAM trust policy is a resource-based policy attached to an IAM role. It defines which principal(s) (AWS accounts, IAM users, IAM roles, and AWS services) are allowed to assume that role. In essence, it establishes the "trust relationship" that allows entities to obtain temporary security credentials by assuming the role.
 
 Here are a few common examples of IAM trust policies:
