@@ -1,5 +1,9 @@
 ---
 
+<img width="522" alt="image" src="https://github.com/user-attachments/assets/d2cf985a-5ada-4865-b953-e69991599b71" />
+
+
+-------------------------------
 A REST (Representational State Transfer) API is an architectural style for building web services. It relies on a stateless, client-server communication protocol, typically HTTP. Here are its key features:
 
 **1. Resource-Based:**
