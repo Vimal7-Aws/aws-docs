@@ -1,16 +1,39 @@
-| **Service**                                  | **Regional / Global**                 | **Notes**                                                                       |
-| -------------------------------------------- | ------------------------------------- | ------------------------------------------------------------------------------- |
-| **ALB (Elastic Load Balancing - ALB)**       | ✅ Regional                            | Must be launched in a specific VPC in a region                                  |
-| **Route 53**                                 | 🌐 Global                             | Global service but interacts with regional resources (e.g. health checks)       |
-| **IAM**                                      | 🌐 Global                             | Roles, policies, and users are global across all regions in the account         |
-| **S3**                                       | ✅ Regional (buckets are region-bound) | Bucket is created in a specific region, but service is considered global        |
-| **Kinesis**                                  | ✅ Regional                            | Streams, Firehose, and Analytics are region-specific                            |
-| **ECS (Elastic Container Service)**          | ✅ Regional                            | Services, tasks, and clusters are region-scoped                                 |
-| **DynamoDB**                                 | ✅ Regional                            | Tables live in a single region unless using Global Tables                       |
-| **RDS**                                      | ✅ Regional                            | Instances live in specific regions and AZs                                      |
-| **Aurora**                                   | ✅ Regional                            | Amazon Aurora is part of RDS, scoped to region and AZs                          |
-| **Subnets**                                  | ✅ Regional (per AZ)                   | Subnets are created in specific availability zones (AZs) within a region        |
-| **VPC**                                      | ✅ Regional                            | VPC is regional; subnets inside VPC are per AZ                                  |
-| **NACL (Network ACLs)**                      | ✅ Regional (per VPC)                  | Associated with subnets inside regional VPCs                                    |
-| **Glacier (now part of S3 Storage Classes)** | ✅ Regional                            | Glacier Deep Archive and Instant Retrieval are S3 storage classes, region-bound |
-| **KMS**                                      | ✅ Regional                            | Keys are created and used within a specific region                              |
+Here's a visually enhanced **table of AWS services** with emblems (✅ for Regional, 🌐 for Global, 🔁 for Mixed), showing their **scope** and a short description:
+
+---
+
+### 🌍 AWS Service Scope Table with Emblems
+
+| **Service**                     | **Scope** | **Emblem** | **Description**                                          |
+| ------------------------------- | --------- | ---------- | -------------------------------------------------------- |
+| ALB (Application Load Balancer) | Regional  | ✅          | Runs in a specific VPC and region                        |
+| Route 53                        | Global    | 🌐         | Global DNS service with regional integrations            |
+| IAM                             | Global    | 🌐         | Identity management shared across regions                |
+| S3 (Simple Storage Service)     | Regional  | ✅          | Buckets are region-scoped but globally accessible        |
+| Kinesis                         | Regional  | ✅          | Streams and analytics are created per region             |
+| ECS (Elastic Container Service) | Regional  | ✅          | Clusters and services run in a chosen region             |
+| DynamoDB                        | Regional  | ✅          | Region-scoped by default; Global Tables available        |
+| RDS                             | Regional  | ✅          | Databases deployed in regional AZs                       |
+| Aurora                          | Regional  | ✅          | Region-scoped RDS engine with multi-AZ support           |
+| Subnets                         | Per AZ    | ✅          | Exist in individual availability zones                   |
+| VPC                             | Regional  | ✅          | Virtual networks bound to a single region                |
+| NACL (Network ACL)              | Regional  | ✅          | Linked to subnets in regional VPCs                       |
+| Glacier (S3 Glacier)            | Regional  | ✅          | Cold storage via region-bound S3 buckets                 |
+| KMS (Key Management Service)    | Regional  | ✅          | Region-based key management with multi-region support    |
+| CloudFront (CDN)                | Global    | 🌐         | Global content delivery via edge locations               |
+| API Gateway                     | Mixed     | 🔁         | Supports Regional, Edge-Optimized (global), or Private   |
+| CloudWatch                      | Regional  | ✅          | Region-based logs, metrics, and dashboards               |
+| CloudTrail                      | Mixed     | 🔁         | Regional logging; org-wide multi-region trails supported |
+| EFS (Elastic File System)       | Regional  | ✅          | Region-scoped file systems, AZ-redundant                 |
+| EBS (Elastic Block Store)       | Per AZ    | ✅          | Volumes tied to specific availability zones              |
+| Lambda                          | Regional  | ✅          | Functions are deployed within regions                    |
+
+---
+
+### 🗝️ Emblem Legend:
+
+* ✅ **Regional** – Service is deployed and used within a specific AWS region
+* 🌐 **Global** – Service operates globally, not tied to any one region
+* 🔁 **Mixed** – Supports both regional and global modes depending on configuration
+
+Would you like this exported as a table image, PDF, or CSV file?
