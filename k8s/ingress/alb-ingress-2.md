@@ -1,6 +1,4 @@
-Ah, I understand now! You're looking for visual indicators, like emojis or symbols, to help break up the text and highlight key points. That's a great way to improve readability.
-
-Here's the explanation of how the AWS Load Balancer Controller works in EKS, incorporating some visual indicators:
+![image](https://github.com/user-attachments/assets/daf8560d-fbf1-4068-b557-eaae076b5cbf)
 
 ---
 
