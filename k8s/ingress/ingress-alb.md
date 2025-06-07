@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/2e1b5041-ba16-447a-9327-34e081c250e3)
 
 
 In **Amazon EKS (Elastic Kubernetes Service)**, **ALB** (Application Load Balancer) and **Ingress** work together via the **AWS Load Balancer Controller** to expose and route traffic from the internet to your Kubernetes services. Here's a full breakdown:
